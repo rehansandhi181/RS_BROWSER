@@ -334,13 +334,13 @@ abstract class BrowserActivity : ThemableBrowserActivity() {
             val siteName = rawUrl.replace(".rehan", "")
             // AB SAHI URL: Hum seedha aapki Netlify dashboard ko 'site' parameter bhejenge
             // Jo piche se https://rs-181.github.io/go/database.json ko fetch karega
-            presenter.onSearch("https://rs-browser.netlify.app/?site=" + siteName)
+            presenter.onSearch("https://rs-181.github.io/rs-browser/?site=" + siteName)
         } else {
             presenter.onSearch(rawUrl)
             if (rawUrl.endsWith(".rehan")) {
     val siteName = rawUrl.replace(".rehan", "")
     // Yeh URL Netlify ko request bhejti hai
-    presenter.onSearch("https://rs-browser.netlify.app/?site=" + siteName)
+    presenter.onSearch("https://rs-181.github.io/rs-browser/?site=" + siteName)
 }
         }
     },
